@@ -1,4 +1,4 @@
-const NAV_LINKS = ["About", "Series", "Support", "Search"] as const;
+const NAV_LINKS = ["About", "Contact", "Shop in US", "Cart (0)"] as const;
 
 export function Header() {
   return (
@@ -13,8 +13,8 @@ export function Header() {
             {NAV_LINKS.map((link) => (
               <a
                 key={link}
-                href={`#${link.toLowerCase()}`}
-                className="text-sm tracking-wide text-gray-300 hover:text-white transition-colors"
+                href={`#${link.toLowerCase().replace(/\s+/g, "-")}`}
+                className="text-xs tracking-wide text-gray-400 hover:text-white transition-colors"
               >
                 {link}
               </a>

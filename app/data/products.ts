@@ -3,6 +3,7 @@ export type Product = {
   name: string;
   price: number;
   colorDot: string;
+  colorDotFilled: boolean;
   slug: string;
 };
 
@@ -10,15 +11,17 @@ export const products: Product[] = [
   {
     id: "transparent-speaker-black",
     name: "Transparent Speaker",
-    price: 1900,
+    price: 1100,
     colorDot: "#000000",
+    colorDotFilled: true,
     slug: "transparent-speaker-black",
   },
   {
     id: "transparent-speaker-red",
     name: "Transparent Speaker",
-    price: 1900,
+    price: 1100,
     colorDot: "#d92b2b",
+    colorDotFilled: true,
     slug: "transparent-speaker-red",
   },
   {
@@ -26,6 +29,7 @@ export const products: Product[] = [
     name: "Small Transparent Speaker",
     price: 900,
     colorDot: "#000000",
+    colorDotFilled: true,
     slug: "small-transparent-speaker-white",
   },
   {
@@ -33,20 +37,23 @@ export const products: Product[] = [
     name: "Small Transparent Speaker",
     price: 900,
     colorDot: "#000000",
+    colorDotFilled: true,
     slug: "small-transparent-speaker-dark",
   },
   {
     id: "acoustic-sculpture-black",
     name: "Acoustic Sculpture",
-    price: 1900,
+    price: 3000,
     colorDot: "#000000",
+    colorDotFilled: true,
     slug: "acoustic-sculpture-black",
   },
   {
     id: "acoustic-sculpture-white",
     name: "Acoustic Sculpture",
-    price: 1900,
+    price: 3000,
     colorDot: "#000000",
+    colorDotFilled: false,
     slug: "acoustic-sculpture-white",
   },
 ];
