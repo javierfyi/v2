@@ -2,52 +2,59 @@ export type Product = {
   id: string;
   name: string;
   price: number;
-  colorDot: string;
   slug: string;
+  variant: "light" | "dark";
+  imageCount: number;
 };
 
 export const products: Product[] = [
   {
-    id: "transparent-speaker-black",
+    id: "transparent-speaker-light",
     name: "Transparent Speaker",
     price: 1900,
-    colorDot: "#000000",
-    slug: "transparent-speaker-black",
+    slug: "transparent-speaker-light",
+    variant: "light",
+    imageCount: 3,
   },
   {
-    id: "transparent-speaker-red",
+    id: "transparent-speaker-dark",
     name: "Transparent Speaker",
     price: 1900,
-    colorDot: "#d92b2b",
-    slug: "transparent-speaker-red",
+    slug: "transparent-speaker-dark",
+    variant: "dark",
+    imageCount: 3,
   },
   {
-    id: "small-transparent-speaker-white",
+    id: "small-transparent-speaker-light",
     name: "Small Transparent Speaker",
     price: 900,
-    colorDot: "#000000",
-    slug: "small-transparent-speaker-white",
+    slug: "small-transparent-speaker-light",
+    variant: "light",
+    imageCount: 3,
   },
   {
     id: "small-transparent-speaker-dark",
     name: "Small Transparent Speaker",
     price: 900,
-    colorDot: "#000000",
     slug: "small-transparent-speaker-dark",
+    variant: "dark",
+    imageCount: 3,
   },
   {
-    id: "acoustic-sculpture-black",
+    id: "acoustic-sculpture-dark",
     name: "Acoustic Sculpture",
     price: 1900,
-    colorDot: "#000000",
-    slug: "acoustic-sculpture-black",
+    slug: "acoustic-sculpture-dark",
+    variant: "dark",
+    imageCount: 3,
   },
   {
-    id: "acoustic-sculpture-white",
+    id: "acoustic-sculpture-light",
     name: "Acoustic Sculpture",
     price: 1900,
-    colorDot: "#000000",
-    slug: "acoustic-sculpture-white",
+    slug: "acoustic-sculpture-light",
+    variant: "light",
+    imageCount: 3,
   },
 ];
 
