@@ -2,59 +2,59 @@ export type Product = {
   id: string;
   name: string;
   price: number;
+  colorDot: string;
+  colorDotFilled: boolean;
   slug: string;
-  variant: "light" | "dark";
-  imageCount: number;
 };
 
 export const products: Product[] = [
   {
-    id: "transparent-speaker-light",
+    id: "transparent-speaker-black",
     name: "Transparent Speaker",
-    price: 1900,
-    slug: "transparent-speaker-light",
-    variant: "light",
-    imageCount: 3,
+    price: 1100,
+    colorDot: "#000000",
+    colorDotFilled: true,
+    slug: "transparent-speaker-black",
   },
   {
-    id: "transparent-speaker-dark",
+    id: "transparent-speaker-red",
     name: "Transparent Speaker",
-    price: 1900,
-    slug: "transparent-speaker-dark",
-    variant: "dark",
-    imageCount: 3,
+    price: 1100,
+    colorDot: "#d92b2b",
+    colorDotFilled: true,
+    slug: "transparent-speaker-red",
   },
   {
-    id: "small-transparent-speaker-light",
+    id: "small-transparent-speaker-white",
     name: "Small Transparent Speaker",
     price: 900,
-    slug: "small-transparent-speaker-light",
-    variant: "light",
-    imageCount: 3,
+    colorDot: "#000000",
+    colorDotFilled: true,
+    slug: "small-transparent-speaker-white",
   },
   {
     id: "small-transparent-speaker-dark",
     name: "Small Transparent Speaker",
     price: 900,
+    colorDot: "#000000",
+    colorDotFilled: true,
     slug: "small-transparent-speaker-dark",
-    variant: "dark",
-    imageCount: 3,
   },
   {
-    id: "acoustic-sculpture-dark",
+    id: "acoustic-sculpture-black",
     name: "Acoustic Sculpture",
-    price: 1900,
-    slug: "acoustic-sculpture-dark",
-    variant: "dark",
-    imageCount: 3,
+    price: 3000,
+    colorDot: "#000000",
+    colorDotFilled: true,
+    slug: "acoustic-sculpture-black",
   },
   {
-    id: "acoustic-sculpture-light",
+    id: "acoustic-sculpture-white",
     name: "Acoustic Sculpture",
-    price: 1900,
-    slug: "acoustic-sculpture-light",
-    variant: "light",
-    imageCount: 3,
+    price: 3000,
+    colorDot: "#000000",
+    colorDotFilled: false,
+    slug: "acoustic-sculpture-white",
   },
 ];
 
